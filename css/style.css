@@ -1,1 +1,94 @@
 
+        body {
+            margin: 0;
+            font-family: "lato", sans-serif;
+            background-color: #dfe6e9;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calendar {
+            width: 100%;
+height:100%;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow to keep corners rounded */
+        }
+
+        .month {
+            display: flex;
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center align */
+            background-color: #2ecc72;
+            color: #fff;
+            padding: 20px;
+            border-top-left-radius: 15px; /* Rounded corners */
+            border-top-right-radius: 15px; /* Rounded corners */
+        }
+
+        .weekends {
+            display: flex;
+            background-color: #27ae60;
+            color: #fff;
+            padding: 7px 0;
+        }
+
+        .weekends div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            justify-content: space-around; /* Center align */
+        }
+
+        .days div {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Circle shape */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .days div:hover {
+            background-color: #dfe6e9;
+            cursor: pointer;
+        }
+.current-day {
+            color: black; /* Change color to your preference */
+        }
+
+        .selected {
+            background-color: #27ae60 !important; /* Green color */
+            color: #fff !important; /* White text */
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+        }
+
+        #real-date {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #month-year {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align */
+        }
+    
