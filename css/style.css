@@ -68,7 +68,7 @@ height:100%;
             cursor: pointer;
         }
 .current-day {
-            color: yellow; /* Change color to your preference */
+            color: black; /* Change color to your preference */
         }
 
         .selected {
